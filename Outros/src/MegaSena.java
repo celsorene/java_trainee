@@ -34,9 +34,9 @@ public class MegaSena {
 
         JOptionPane.showMessageDialog(null, "Jogue as 6 dezenas: " + cNumeros, "Selecao randomica - MEGASENA", 1);
 
-
     }
 
+    //funcao utilizada para testar o valor da dezena com o array (evitando duplicidade)
     public static boolean contains(final ArrayList<Integer> valores, final int number) {
         boolean found = false;
 
