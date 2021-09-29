@@ -1,19 +1,20 @@
 import java.util.Random;
-import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.Arrays;
+import javax.swing.JOptionPane;
 
 public class MegaSena {
     public static void main(String[] args) {
 
         Random generate = new Random();
-        int x;
+        
         boolean lNumber = false;
+        String cNumeros = "";
         
         ArrayList<Integer> valores = new ArrayList<Integer>();
 
         //comando for incremento e expressao
         for (int i = 0; i < 6;){
+            
             int number = generate.nextInt(60);
             
             //verifica se numero do array ja existe, se existe pula...
@@ -22,9 +23,16 @@ public class MegaSena {
             if (number > 0 && lNumber == false ) {                
                 valores.add(number);
                 System.out.println(number);
+                if (cNumeros == ""){                    
+                    cNumeros += number;
+                }else{
+                    cNumeros += "," + number;
+                }
                 i++;
             }
         }
+
+        JOptionPane.showMessageDialog(null, "Jogue as 6 dezenas: " + cNumeros, "Selecao randomica - MEGASENA", 1);
 
 
     }

@@ -19,6 +19,7 @@ public class xVariaveis {
         System.out.println(x);
 
         System.out.println("");
+        
 
         //tipos primitivos e nao primitivos de variaveis
         int a = 2;
@@ -40,5 +41,5 @@ public class xVariaveis {
 
     }
 
-    
+
 }
