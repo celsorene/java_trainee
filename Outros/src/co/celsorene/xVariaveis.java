@@ -1,3 +1,5 @@
+package co.celsorene;
+
 import java.util.Scanner;
 
 public class xVariaveis {
@@ -10,7 +12,7 @@ public class xVariaveis {
         //escopo de variaveis
         int x;
 
-        if (true){
+        if (PI == 3.14159){
             x=10;
         } else{
             x=2;
@@ -29,7 +31,6 @@ public class xVariaveis {
 
         System.out.println("");
 
-
         //integracao com o usuario
         Scanner scanner = new Scanner(System.in);
 
@@ -40,6 +41,5 @@ public class xVariaveis {
         scanner.close();
 
     }
-
 
 }
